@@ -1,5 +1,5 @@
 import {render} from 'react-dom';
 import './global.scss';
-import {Container} from './components/Container/Container';
+import {App} from './App';
 
-render(<Container />, document.getElementById('root'));
+render(<App />, document.getElementById('root'));

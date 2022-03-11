@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
 	target: 'web',
@@ -23,9 +24,14 @@ module.exports = {
 				test: /\.(s[ac]|c)ss$/i,
 				use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
 			},
+			{
+				test: /\.(webp)/i,
+				type: 'asset/resource',
+			},
 		],
 	},
 	plugins: [
+		new Dotenv(),
 		new MiniCssExtractPlugin(),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'src', 'template.html'),
