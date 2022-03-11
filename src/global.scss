@@ -21,3 +21,8 @@ body {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
+
+input:invalid {
+  background-color: red;
+  color: white;
+}

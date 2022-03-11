@@ -12,7 +12,7 @@ export const Title: FC<TitleProps> = ({username, setUsername}) => {
   };
 
   return (
-    <div className='flex gap-5'>
+    <div className='flex gap-5 w-full'>
       <h1 className='text-5xl text-white'>Hello</h1>
       <input
         type="text"

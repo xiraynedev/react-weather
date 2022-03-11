@@ -5,7 +5,7 @@ import {Content} from './pages/Content/Content';
 
 export const App: FC = () => {
   return (
-    <div className='w-screen h-screen border bg-gradient-to-br from-primary flex justify-center items-center'>
+    <div className='w-screen h-screen bg-gradient-to-br from-primary'>
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
